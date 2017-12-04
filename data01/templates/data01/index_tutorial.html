@@ -1,0 +1,40 @@
+<html>
+  <head>
+
+  </head>
+  <body>
+    현재 시각 :
+    {% now "Y년 n월 d일" %}
+    {{date}}요일
+    {% now "H:i:s" %}
+    <h1>오늘의 행사</h1>
+    <div>
+      {% for pd1_time in today_list %}
+      title={{pd1_time.title}}
+      <br />
+      where={{pd1_time.where}}
+      <br />
+      <br />
+      {% endfor %}
+    <h1>내일의 행사</h1>
+    <div>
+      {% for pd1_time in tomorrow_list %}
+      title={{pd1_time.title}}
+      <br />
+      where={{pd1_time.where}}
+      <br />
+      <br />
+      {% endfor %}
+    </div>
+    <h1>금주의 행사</h1>
+    <div>
+      {% for pd1_time in this_week_list %}
+      title={{pd1_time.title}}
+      <br />
+      where={{pd1_time.where}}
+      <br />
+      <br />
+      {% endfor %}
+    </div>
+  </body>
+</html>

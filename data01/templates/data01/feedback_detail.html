@@ -1,0 +1,14 @@
+<h1>{{feedback_post.basepost}}</h1>
+
+<h3>ADD FEEDBACK</h3>
+
+<a href="{% url 'new' feedback_post.pk %}">GO</a>
+
+<ul>
+  {% for comment in feedback_post.feedback_set.all %}
+    <li>
+      {{ comment.message }} by
+      <small> {{comment.name}}, {{comment.createdwhen}} </small>
+    </li>
+  {% endfor %}
+</ul>

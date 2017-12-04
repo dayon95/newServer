@@ -1,0 +1,55 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2017 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+body {
+  font-family:"Jeju Gothic";
+  padding-top: 54px;
+}
+
+
+.myfooter{
+  /*https://stackoverflow.com/questions/22970117/bootstrap-footer-full-width-of-page 참고 */
+  position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
+
+/*카테고리 텍스트 색깔*/
+a.list-group-item{
+  color: black;
+}
+/*carousel 최대 길이*/
+.carousel-inner{
+  max-height: 400px;
+}
+/*navbar 폰트*/
+.navbar-brand{
+  font-family: 'Arvo', serif;
+}
+.row-centered{
+  text-align: center;
+}
+
+header.masthead {
+  background: url('https://unsplash.it/1900/1080?image=304') no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+header.masthead>.overlay {
+  padding: 5rem 0;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+@media (min-width: 992px) {
+  body {
+    padding-top: 56px;
+  }
+}
